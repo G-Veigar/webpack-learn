@@ -1,5 +1,11 @@
-import add from './add'
+import sayhi from './sayhi'
 
-let res = add(1, 2)
+console.log('index')
 
-console.log(res)
+setTimeout(() => {
+    console.log('setTimeout')
+    document.getElementById('appp').addEventListener('click', () => {
+        console.log('click')
+        sayhi()
+    })
+}, 2000)

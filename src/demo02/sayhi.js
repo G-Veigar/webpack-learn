@@ -1,5 +1,7 @@
 function sayhi() {
-    alert('hi')
+    console.log('hellow')
 }
+
+console.log('ddd')
 
 export default sayhi
