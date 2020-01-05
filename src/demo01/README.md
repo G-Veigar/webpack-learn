@@ -1,4 +1,3 @@
-## webpack --watch
-watch模式下监控文件并自动build
+## three-sharking
 
-缺点是得自己手动刷新浏览器
+通过在Package.json中的sideEffects字段标记副作用，提示webpack编译器可以开启tree-sharking(例如：lodash)

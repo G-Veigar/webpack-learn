@@ -1,11 +1,3 @@
-import sayhi from './sayhi'
+import {square, cube} from './math'
 
-console.log('index')
-
-setTimeout(() => {
-    console.log('setTimeout')
-    document.getElementById('appp').addEventListener('click', () => {
-        console.log('click')
-        sayhi()
-    })
-}, 2000)
+console.log(square(2), cube(3))

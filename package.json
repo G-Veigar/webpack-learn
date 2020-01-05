@@ -16,7 +16,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "demo1": "webpack --watch --config src/demo02/webpack.config.js",
+    "demo1": "webpack --watch --optimize-minimize --config src/demo01/webpack.config.js",
     "demo2": "webpack-dev-server --open"
   },
   "repository": {
