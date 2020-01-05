@@ -7,7 +7,10 @@
     "webpack-cli": "^3.3.10",
     "webpack": "^4.41.5"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^3.2.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config src/demo02/webpack.config.js"
