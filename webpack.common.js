@@ -7,19 +7,20 @@ module.exports = {
     devtool: 'source-map',
     output: {
         filename: '[name].bundle.js',
+        chunkFilename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
-    module: {
-        rules: [
-            {
-                test: /\.css$/,
-                use: [
-                'style-loader',
-                'css-loader'
-                ]
-            }
-        ]
-    },
+    // module: {
+    //     rules: [
+    //         {
+    //             test: /\.css$/,
+    //             use: [
+    //             'style-loader',
+    //             'css-loader'
+    //             ]
+    //         }
+    //     ]
+    // },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({

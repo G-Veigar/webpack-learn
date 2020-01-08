@@ -1,0 +1,1 @@
+export const a = '异步模块'

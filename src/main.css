@@ -1,0 +1,4 @@
+h1 {
+    height: calc(2 * 100px);
+    background-color: rgba(231, 22, 111, 1);
+}
