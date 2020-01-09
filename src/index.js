@@ -1,8 +1,7 @@
-import {square, cube} from './math'
-import './main.css'
+let moduleName = 'b'
 
-console.log(square(2), cube(3))
+let myModule = require('./module/' + moduleName + '.js')
 
-import('./async').then(module => {
-    console.log(module)
-})
+// let myModule = require('./module/b.js')
+
+console.log(myModule)
