@@ -1,7 +1,3 @@
-let moduleName = 'b'
+import a from './a.hehe'
 
-let myModule = require('./module/' + moduleName + '.js')
-
-// let myModule = require('./module/b.js')
-
-console.log(myModule)
+console.log(a)

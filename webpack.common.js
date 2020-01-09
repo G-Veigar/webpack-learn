@@ -10,17 +10,21 @@ module.exports = {
         chunkFilename: '[name].bundle.js',
         path: path.resolve(__dirname, 'dist')
     },
-    // module: {
-    //     rules: [
-    //         {
-    //             test: /\.css$/,
-    //             use: [
-    //             'style-loader',
-    //             'css-loader'
-    //             ]
-    //         }
-    //     ]
-    // },
+    module: {
+        rules: [
+            {
+                test: /\.hehe$/,
+                use: [
+                    {
+                        loader: path.resolve('./src/loader/index.js'),
+                        options: {
+                            type: 1
+                        }
+                    }
+                ]
+            }
+        ]
+    },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
