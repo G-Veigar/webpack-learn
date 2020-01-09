@@ -3,10 +3,22 @@ const common = require('./webpack.common.js')
 const path = require('path')
 
 module.exports = merge(common, {
-    mode: 'development',
-    devtool: 'inline-source-map',
-    devServer: {
-        contentBase:  path.resolve(__dirname, 'dist'),
-        hot: true
-    }
+  mode: 'development',
+  devtool: 'inline-source-map',
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader'
+        ]
+      }
+    ]
+  },
+  devServer: {
+    contentBase: './dist',
+    hot: true,
+    host: '0.0.0.0'
+  }
 })
