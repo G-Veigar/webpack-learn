@@ -4,7 +4,7 @@
   "description": "webpack learn",
   "main": "index.js",
   "dependencies": {
-    "webpack-cli": "^3.3.10",
+    "webpack-cli": "^3.3.12",
     "webpack": "^4.41.5"
   },
   "devDependencies": {},
